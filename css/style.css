@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:700");
+@import url("https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+::selection {
+  background: #fff6ea; }
+
+body {
+  width: 100%;
+  margin: 80px 0;
+  left: 0;
+  top: 0;
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #4a4a4a;
+  line-height: 1.5; }
+
+h1 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  color: #050505;
+  font-size: 2.5rem;
+  line-height: 3; }
+
+h2 {
+  color: #050505;
+  font-size: 1.5rem;
+  font-weight: 400; }
+
+h3 {
+  color: #050505;
+  font-size: 1.375rem;
+  font-weight: 500; }
+
+a {
+  color: #050505;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #f3f3f3;
+  transition: all .2s ease-in-out;
+  transform: translateZ(0); }
+  a:hover {
+    border-bottom: 1px solid #9b9b9b; }
+
+header, main, footer {
+  max-width: 900px;
+  margin: 0 auto; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 60px 0; }
+
+.column {
+  margin-right: 40px; }
+  .column:last-of-type {
+    margin-right: 0; }
+
+header .row, .row .clients, .contact-bar {
+  align-items: center; }
+
+.intro {
+  align-items: flex-end; }
+
+bdi {
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 1.5rem;
+  color: #9b9b9b;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  right: 52px;
+  transform: rotate(-2deg);
+  line-height: 0; }
+
+.contact img {
+  position: relative;
+  top: 0px;
+  right: 30px; }
+
+mark {
+  color: #4d371b;
+  background: #fff6ea; }
+  mark.unavailable {
+    color: #ef4d4d;
+    background: #fff4f4; }
+
+hr {
+  width: 90px;
+  border: 1px solid #f3f3f3;
+  margin: 0 auto 0 0; }
+
+.contact-bar {
+  padding: 8px 8px 8px 16px;
+  border-radius: 4px;
+  background-color: #ecfceb;
+  color: #13b100;
+  font-size: 0.875rem; }
+
+a.button {
+  padding: 8px 10px;
+  color: white;
+  border-radius: 4px;
+  background-color: #4ae238;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  font-size: 0.75rem;
+  box-shadow: 0 2px 4px 0 rgba(6, 221, 47, 0.12);
+  transition: all .2s ease-in-out; }
+  a.button:hover {
+    box-shadow: 0 4px 10px 0 rgba(6, 221, 47, 0.24);
+    transform: translateY(-1px); }
+
+.thumbnails a {
+  transition: all .2s ease-in-out;
+  border: none; }
+  .thumbnails a:hover {
+    opacity: 0.8;
+    transform: translateY(-1px); }
+  .thumbnails a img {
+    width: 273.33333px;
+    height: auto;
+    border-radius: 4px; }
+
+.thumbnails, .testimonials {
+  margin-bottom: 80px; }
+
+.question {
+  color: #050505;
+  font-weight: 500;
+  margin-bottom: 20px; }
+
+.author {
+  color: #9b9b9b;
+  margin-top: 20px; }
+
+footer, footer a {
+  color: #9b9b9b; }
+
+@media screen and (min-width: 1000px) {
+  .column {
+    flex: 1; } }
+@media screen and (max-width: 1000px) {
+  header, main, footer {
+    max-width: 85%; }
+
+  .column {
+    text-align: center;
+    margin: 0 auto 20px auto; }
+    .column:last-of-type {
+      margin: 0 auto; }
+
+  .intro figure {
+    margin: auto; }
+
+  hr {
+    margin: auto; }
+
+  .thumbnails a {
+    width: 100%;
+    margin-bottom: 20px; }
+    .thumbnails a:last-of-type {
+      margin-bottom: 0; }
+    .thumbnails a img {
+      width: 100%; }
+
+  .contact-bar {
+    padding: 30px;
+    text-align: center;
+    justify-content: space-around; }
+    .contact-bar .message {
+      width: 100%; }
+    .contact-bar .button {
+      margin-top: 20px; }
+
+  .clients {
+    justify-content: space-around; }
+    .clients img {
+      padding: 10px; } }
+@media screen and (max-width: 850px) {
+  .clients {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px; } }
+
+/*# sourceMappingURL=style.css.map */

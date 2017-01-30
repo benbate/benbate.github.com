@@ -1,0 +1,349 @@
+// reset
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+// fonts
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+@import url('https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco');
+
+$font-primary: 'Roboto', Helvetica, sans-serif;
+$font-secondary: 'Poppins', Helvetica, sans-serif;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-height: 1.5;
+
+
+// colors
+
+$very-light-grey: #f3f3f3;
+$light-grey: #9b9b9b;
+$dark-grey: #4a4a4a;
+$black: #050505;
+$light-green: #ecfceb;
+$green: #4ae238;
+$dark-green: #13b100;
+$blue: #0180FF;
+$light-red: #fff4f4;
+$red: #ef4d4d;
+$light-brown: #fff6ea;
+$dark-brown: #4d371b;
+
+$color: $dark-grey;
+$link-color: $black;
+
+
+// universal
+
+$radius: 4px;
+$padding: 8px 8px 8px 16px;
+$button-padding: 8px 10px;
+$gutter: 40px;
+
+::selection {
+  background: $light-brown;
+}
+
+body {
+  width: 100%;
+  margin: $gutter * 2 0;
+  left: 0;
+  top: 0;
+  font-family: $font-primary;
+  color: $color;
+  line-height: $font-height;
+}
+
+
+// typography
+
+h1 {
+  font-family: $font-secondary;
+  color: $black;
+  font-size: 2.5rem;
+  line-height: $font-height * 2;
+}
+
+h2 {
+  color: $black;
+  font-size: 1.5rem;
+  font-weight: $font-weight-regular;
+}
+
+h3 {
+  color: $black;
+  font-size: 1.375rem;
+  font-weight: $font-weight-medium;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid $very-light-grey;
+  transition: all .2s ease-in-out;
+  transform: translateZ(0);
+  &:hover {
+    border-bottom: 1px solid $light-grey;
+  }
+}
+
+
+// grid
+
+header, main, footer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: $gutter * 1.5 0;
+}
+
+.column {
+  margin-right: $gutter;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+
+// align
+
+%flex-start {
+  align-items: flex-start;
+}
+
+%flex-center {
+  align-items: center;
+}
+
+%flex-end {
+  align-items: flex-end;
+}
+
+header .row, .row .clients, .contact-bar {
+  @extend %flex-center;
+}
+
+.intro {
+  @extend %flex-end;
+}
+
+
+// header
+
+bdi {
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 1.5rem;
+  color: $light-grey;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  right: 52px;
+  transform: rotate(-2deg);
+  line-height: 0;
+}
+
+.contact img {
+  position: relative;
+  top: 0px;
+  right: 30px;
+}
+
+mark {
+  color: $dark-brown;
+  background: $light-brown;
+  &.unavailable {
+    color: $red;
+    background: $light-red;
+  }
+}
+
+
+// main
+
+hr {
+  width: 90px;
+  border: 1px solid $very-light-grey;
+  margin: 0 auto 0 0;
+}
+
+.contact-bar {
+  padding: $padding;
+  border-radius: $radius;
+  background-color: $light-green;
+  color: $dark-green;
+  font-size: 0.875rem;
+}
+
+a.button {
+  padding: $button-padding;
+  color: white;
+  border-radius: $radius;
+  background-color: $green;
+  letter-spacing: 0.1rem;
+  font-weight: $font-weight-bold;
+  text-decoration: none;
+  border: none;
+  font-size: 0.75rem;
+  box-shadow: 0 2px 4px 0 rgba(6, 221, 47, 0.12);
+  transition: all .2s ease-in-out;
+  &:hover {
+    box-shadow: 0 4px 10px 0 rgba(6, 221, 47, 0.24);
+    transform: translateY(-1px);
+  }
+}
+
+.thumbnails {
+  a {
+    transition: all .2s ease-in-out;
+    border: none;
+    &:hover {
+      opacity: 0.8;
+      transform: translateY(-1px);
+    }
+    img {
+      width: (900px - $gutter * 2) / 3;
+      height: auto;
+      border-radius: $radius;
+    }
+  }
+}
+
+.thumbnails, .testimonials {
+  margin-bottom: $gutter * 2;
+}
+
+.question {
+  color: $black;
+  font-weight: $font-weight-medium;
+  margin-bottom: $gutter / 2;
+}
+
+.author {
+  color: $light-grey;
+  margin-top: $gutter / 2;
+}
+
+
+// footer
+
+footer, footer a {
+  color: $light-grey;
+}
+
+
+// media
+
+@media screen and (min-width: 1000px) {
+  .column {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header, main, footer {
+    max-width: 85%;
+  }
+  .column {
+    text-align: center;
+    margin: 0 auto $gutter / 2 auto;
+    &:last-of-type {
+      margin: 0 auto;
+    }
+  }
+  .intro figure {
+    margin: auto;
+  }
+  hr {
+    margin: auto;
+  }
+  .thumbnails a {
+    width: 100%;
+    margin-bottom: $gutter / 2;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .contact-bar {
+    padding: $gutter * 0.75;
+    text-align: center;
+    justify-content: space-around;
+    .message {
+      width: 100%;
+    }
+    .button {
+      margin-top: $gutter / 2;
+    }
+  }
+  .clients {
+    justify-content: space-around;
+    img {
+      padding: $gutter / 4;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .clients {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+  }
+}
