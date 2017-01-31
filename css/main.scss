@@ -108,7 +108,7 @@ h1 {
   font-family: $font-secondary;
   color: $black;
   font-size: 2.5rem;
-  line-height: $font-height * 2;
+  margin-bottom: $gutter;
 }
 
 h2 {
@@ -347,3 +347,23 @@ footer, footer a {
     width: 400px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .contact bdi, .contact img {
+    display: none;
+  }
+  .clients {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .clients {
+    width: 150px;
+  }
+}
+
+
+// imports
+
+@import "404";
