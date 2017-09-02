@@ -138,11 +138,11 @@ hr {
   font-size: 0.875rem; }
 
 a.button {
-  padding: 8px 10px 9px 12px;
+  padding: 8px 9px 9px 11px;
   color: white;
   border-radius: 4px;
   background-color: #00ea7e;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.08rem;
   font-weight: 700;
   text-decoration: none;
   border: none;

@@ -84,7 +84,7 @@ $link-color: $black;
 
 $radius: 4px;
 $padding: 8px 8px 8px 16px;
-$button-padding: 8px 10px 9px 12px;
+$button-padding: 8px 9px 9px 11px;
 $gutter: 40px;
 
 ::selection {
@@ -234,7 +234,7 @@ a.button {
   color: white;
   border-radius: $radius;
   background-color: $green;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.08rem;
   font-weight: $font-weight-bold;
   text-decoration: none;
   border: none;
