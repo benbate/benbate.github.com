@@ -83,7 +83,7 @@ $link-color: $black;
 // universal
 
 $radius: 4px;
-$padding: 8px 8px 8px 16px;
+$padding: 7px 7px 7px 15px;
 $button-padding: 8px 9px 9px 11px;
 $gutter: 40px;
 
@@ -234,7 +234,7 @@ a.button {
   color: white;
   border-radius: $radius;
   background-color: $green;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.075rem;
   font-weight: $font-weight-bold;
   text-decoration: none;
   border: none;

@@ -131,7 +131,7 @@ hr {
   margin: 0 auto 0 0; }
 
 .contact-bar {
-  padding: 8px 8px 8px 16px;
+  padding: 7px 7px 7px 15px;
   border-radius: 4px;
   background-color: #effdf6;
   color: #00c369;
@@ -142,7 +142,7 @@ a.button {
   color: white;
   border-radius: 4px;
   background-color: #00ea7e;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.075rem;
   font-weight: 700;
   text-decoration: none;
   border: none;
