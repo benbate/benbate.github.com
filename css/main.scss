@@ -274,8 +274,16 @@ a.button {
 }
 
 .author {
+  display: flex;
+  align-items: center;
   color: $light-grey;
   margin-top: $gutter / 2;
+  img {
+    width: 24px;
+    height: 24px;
+    margin-right: $gutter / 4;
+    border-radius: 100%;
+  }
 }
 
 
@@ -295,8 +303,14 @@ footer, footer a {
 }
 
 @media screen and (max-width: 1000px) {
+  body {
+    margin: 0;
+  }
   header, main, footer {
     max-width: 85%;
+  }
+  .row {
+    margin: 40px 0;
   }
   .column {
     text-align: center;
@@ -338,6 +352,9 @@ footer, footer a {
       padding: $gutter / 4;
     }
   }
+  .author {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -349,6 +366,9 @@ footer, footer a {
 }
 
 @media screen and (max-width: 500px) {
+  .intro figure {
+    display: none;
+  }
   .contact bdi, .contact img {
     display: none;
   }

@@ -173,8 +173,15 @@ a.button {
   margin-bottom: 20px; }
 
 .author {
+  display: flex;
+  align-items: center;
   color: #9b9b9b;
   margin-top: 20px; }
+  .author img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 100%; }
 
 footer, footer a {
   color: #9b9b9b; }
@@ -183,8 +190,14 @@ footer, footer a {
   .column {
     flex: 1; } }
 @media screen and (max-width: 1000px) {
+  body {
+    margin: 0; }
+
   header, main, footer {
     max-width: 85%; }
+
+  .row {
+    margin: 40px 0; }
 
   .column {
     text-align: center;
@@ -218,13 +231,19 @@ footer, footer a {
   .clients {
     justify-content: space-around; }
     .clients img {
-      padding: 10px; } }
+      padding: 10px; }
+
+  .author {
+    justify-content: center; } }
 @media screen and (max-width: 850px) {
   .clients {
     margin-left: auto;
     margin-right: auto;
     width: 400px; } }
 @media screen and (max-width: 500px) {
+  .intro figure {
+    display: none; }
+
   .contact bdi, .contact img {
     display: none; }
 
