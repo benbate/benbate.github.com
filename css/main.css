@@ -147,10 +147,10 @@ a.button {
   text-decoration: none;
   border: none;
   font-size: 0.75rem;
-  box-shadow: 0 2px 4px 0 rgba(234, 126, 1, 0.12);
+  box-shadow: 0 2px 4px 0 rgba(0, 234, 126, 0.12);
   transition: all .2s ease-in-out; }
   a.button:hover {
-    box-shadow: 0 4px 10px 0 rgba(234, 126, 1, 0.24);
+    box-shadow: 0 4px 10px 0 rgba(0, 234, 126, 0.24);
     transform: translateY(-1px); }
 
 .thumbnails a {
