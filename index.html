@@ -26,8 +26,11 @@
 <header role="banner">
 
   <section class="row">
-    <img src="img/logo.svg" height="30.5" alt="logo"/>
-    <a href="mailto:hi@benbate.com" class="button" title="Email Ben Bate (hi@benbate.com)" role="button">CONTACT</a>
+    <img src="img/logo.svg" height="30.5" alt="Ben Bate Logo"/>
+    <div class="contact">
+      <a href="https://www.messenger.com/t/hibenbate" class="messenger" title="Message Ben Bate on Facebook" role="button"><img src="img/messenger.svg" height="15" alt="Facebook Messenger Logo"></a>
+      <a href="mailto:hi@benbate.com" class="email" title="Email Ben Bate (hi@benbate.com)" role="button">EMAIL</a>
+    </div>
   </section>
 
 </header>
@@ -73,7 +76,7 @@
       <img src="img/swiftype.svg" height="25" alt="Swiftype Logo"/>
   </section>
 
-  <section class="row contact-bar"><span class="message">Send me an email about your project and I will prepare a detailed PDF portfolio with relevant work samples.</span><a href="mailto:hi@benbate.com" class="button" title="Email Ben Bate (hi@benbate.com)" role="button">CONTACT</a>
+  <section class="row contact-bar"><span class="message">Send me an email about your project and I will prepare a detailed PDF portfolio with relevant work samples.</span><a href="mailto:hi@benbate.com" class="email" title="Email Ben Bate (hi@benbate.com)" role="button">EMAIL</a>
   </section>
 
   <section class="row thumbnails">
@@ -108,7 +111,7 @@
   <section class="row">
     <div class="column">
       <p class="question">Q. Where can I see your work?</p>
-      <p><a href="mailto:hi@benbate.com" title="Email Ben Bate (hi@benbate.com)" target="_blank">Email me</a> and I will prepare work samples relevant to your project, with accompanying details.</p>
+      <p><a href="mailto:hi@benbate.com" title="Email Ben Bate (hi@benbate.com)">Email me</a> and I will prepare work samples relevant to your project, with accompanying details.</p>
     </div>
     <div class="column">
       <p class="question">Q. Are you currently available?</p>
@@ -116,7 +119,7 @@
     </div>
     <div class="column">
       <p class="question">Q. How much do you charge?</p>
-      <p><a href="mailto:hi@benbate.com" title="Email Ben Bate (hi@benbate.com)" target="_blank">Email me</a> and I will compile a custom quote and provide details on my hourly rate.</p>
+      <p><a href="mailto:hi@benbate.com" title="Email Ben Bate (hi@benbate.com)">Email me</a> and I will compile a custom quote and provide details on my hourly rate.</p>
     </div>
   </section>
 
@@ -143,7 +146,7 @@
     </div>
   </section>
 
-  <section class="row contact-bar"><span class="message">Send me an email about your project and I will prepare a detailed PDF portfolio with relevant work samples.</span><a href="mailto:hi@benbate.com" class="button" title="Email Ben Bate (hi@benbate.com)" role="button">CONTACT</a>
+  <section class="row contact-bar"><span class="message">Send me an email about your project and I will prepare a detailed PDF portfolio with relevant work samples.</span><a href="mailto:hi@benbate.com" class="email" title="Email Ben Bate (hi@benbate.com)" role="button">EMAIL</a>
   </section>
 
 </main>
@@ -152,7 +155,7 @@
 
   <section class="row">
     <p>© Ben Bate</p>
-    <p><a href="mailto:hi@benbate.com" title="Email Ben Bate (hi@benbate.com)" target="_blank">hi@benbate.com</a></p>
+    <p><a href="mailto:hi@benbate.com" title="Email Ben Bate (hi@benbate.com)">hi@benbate.com</a></p>
   </section>
 
 </footer>
@@ -162,17 +165,12 @@ $.jribbble.setToken('a7f3b799cc74893b10a33a4f825a8773f4905de16a214c5a6c897b872d3
 $.jribbble.users('benbate').shots({per_page: 3}).then(function(shots) {
   var html = [];
   shots.forEach(function(shot) {
-    html.push('<a href="' + shot.html_url + '" title="View latest work samples on dribbble.com" target="_blank">');
+    html.push('<a href="' + shot.html_url + '" title="View latest work samples on Dribbble" target="_blank">');
     html.push('<img src="' + shot.images.hidpi + '">');
     html.push('</a>');
   });
   $('.thumbnails').html(html.join(''));
 });
-</script>
-
-<script type="text/javascript">
-  Waves.attach('.button', ['waves-light']);
-  Waves.init();
 </script>
 
 </body>

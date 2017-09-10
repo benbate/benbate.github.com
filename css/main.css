@@ -74,7 +74,7 @@ a {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid #f3f3f3;
-  transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out !important;
   transform: translateZ(0); }
   a:hover {
     border-bottom: 1px solid #9b9b9b; }
@@ -102,29 +102,6 @@ header .row, .row .clients, .contact-bar {
 .intro {
   align-items: flex-end; }
 
-bdi {
-  font-family: 'Sue Ellen Francisco', cursive;
-  font-size: 1.5rem;
-  color: #9b9b9b;
-  display: inline-block;
-  position: relative;
-  top: 10px;
-  right: 52px;
-  transform: rotate(-2deg);
-  line-height: 0; }
-
-.contact img {
-  position: relative;
-  top: 0px;
-  right: 30px; }
-
-mark {
-  color: #4d371b;
-  background: #fff6ea; }
-  mark.unavailable {
-    color: #ef4d4d;
-    background: #fff4f4; }
-
 hr {
   width: 90px;
   border: 1px solid #f3f3f3;
@@ -137,28 +114,33 @@ hr {
   color: #00c369;
   font-size: 0.875rem; }
 
-a.button {
-  padding: 8px 9px 9px 11px;
+a.messenger, a.email {
   color: white;
   border-radius: 4px;
-  background-color: #00ea7e;
   letter-spacing: 0.075rem;
   font-weight: 700;
+  line-height: 1;
   text-decoration: none;
   border: none;
-  font-size: 0.75rem;
-  box-shadow: 0 2px 4px 0 rgba(0, 234, 126, 0.12);
-  transition: all .2s ease-in-out; }
-  a.button:hover {
-    box-shadow: 0 4px 10px 0 rgba(0, 234, 126, 0.24);
-    transform: translateY(-1px); }
+  font-size: 0.75rem; }
+  a.messenger:hover, a.email:hover {
+    opacity: 0.8; }
+
+a.messenger {
+  padding: 10px 10px 11px 10px;
+  margin-right: 10px;
+  background-color: #0084ff; }
+  a.messenger img {
+    vertical-align: middle; }
+
+a.email {
+  padding: 10px 11px 11px 13px;
+  background-color: #00ea7e; }
 
 .thumbnails a {
-  transition: all .2s ease-in-out;
   border: none; }
   .thumbnails a:hover {
-    opacity: 0.8;
-    transform: translateY(-1px); }
+    opacity: 0.8; }
   .thumbnails a img {
     width: 273.33333px;
     height: auto;
@@ -171,6 +153,13 @@ a.button {
   color: #050505;
   font-weight: 500;
   margin-bottom: 20px; }
+
+mark {
+  color: #4d371b;
+  background: #fff6ea; }
+  mark.unavailable {
+    color: #ef4d4d;
+    background: #fff4f4; }
 
 .author {
   display: flex;
@@ -225,7 +214,7 @@ footer, footer a {
     justify-content: space-around; }
     .contact-bar .message {
       width: 100%; }
-    .contact-bar .button {
+    .contact-bar a.email {
       margin-top: 20px; }
 
   .clients {
@@ -242,9 +231,6 @@ footer, footer a {
     width: 400px; } }
 @media screen and (max-width: 500px) {
   .intro figure {
-    display: none; }
-
-  .contact bdi, .contact img {
     display: none; }
 
   .clients {

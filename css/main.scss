@@ -70,7 +70,7 @@ $black: #050505;
 $light-green: #effdf6;
 $green: #00ea7e;
 $dark-green: #00c369;
-$blue: #0180FF;
+$blue: #0084ff;
 $light-red: #fff4f4;
 $red: #ef4d4d;
 $light-brown: #fff6ea;
@@ -84,7 +84,7 @@ $link-color: $black;
 
 $radius: 4px;
 $padding: 7px 7px 7px 15px;
-$button-padding: 8px 9px 9px 11px;
+$button-padding: 10px 11px 11px 13px;
 $gutter: 40px;
 
 ::selection {
@@ -128,7 +128,7 @@ a {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid $very-light-grey;
-  transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out !important;
   transform: translateZ(0);
   &:hover {
     border-bottom: 1px solid $light-grey;
@@ -183,36 +183,6 @@ header .row, .row .clients, .contact-bar {
 }
 
 
-// header
-
-bdi {
-  font-family: 'Sue Ellen Francisco', cursive;
-  font-size: 1.5rem;
-  color: $light-grey;
-  display: inline-block;
-  position: relative;
-  top: 10px;
-  right: 52px;
-  transform: rotate(-2deg);
-  line-height: 0;
-}
-
-.contact img {
-  position: relative;
-  top: 0px;
-  right: 30px;
-}
-
-mark {
-  color: $dark-brown;
-  background: $light-brown;
-  &.unavailable {
-    color: $red;
-    background: $light-red;
-  }
-}
-
-
 // main
 
 hr {
@@ -229,31 +199,39 @@ hr {
   font-size: 0.875rem;
 }
 
-a.button {
-  padding: $button-padding;
+a.messenger, a.email {
   color: white;
   border-radius: $radius;
-  background-color: $green;
   letter-spacing: 0.075rem;
   font-weight: $font-weight-bold;
+  line-height: 1;
   text-decoration: none;
   border: none;
   font-size: 0.75rem;
-  box-shadow: 0 2px 4px 0 rgba(0, 234, 126, 0.12);
-  transition: all .2s ease-in-out;
   &:hover {
-    box-shadow: 0 4px 10px 0 rgba(0, 234, 126, 0.24);
-    transform: translateY(-1px);
+    opacity: 0.8;
   }
+}
+
+a.messenger {
+  padding: 10px 10px 11px 10px;
+  margin-right: $gutter / 4;
+  background-color: $blue;
+  img {
+    vertical-align: middle;
+  }
+}
+
+a.email {
+  padding: $button-padding;
+  background-color: $green;
 }
 
 .thumbnails {
   a {
-    transition: all .2s ease-in-out;
     border: none;
     &:hover {
       opacity: 0.8;
-      transform: translateY(-1px);
     }
     img {
       width: (900px - $gutter * 2) / 3;
@@ -271,6 +249,15 @@ a.button {
   color: $black;
   font-weight: $font-weight-medium;
   margin-bottom: $gutter / 2;
+}
+
+mark {
+  color: $dark-brown;
+  background: $light-brown;
+  &.unavailable {
+    color: $red;
+    background: $light-red;
+  }
 }
 
 .author {
@@ -342,7 +329,7 @@ footer, footer a {
     .message {
       width: 100%;
     }
-    .button {
+    a.email {
       margin-top: $gutter / 2;
     }
   }
@@ -367,9 +354,6 @@ footer, footer a {
 
 @media screen and (max-width: 500px) {
   .intro figure {
-    display: none;
-  }
-  .contact bdi, .contact img {
     display: none;
   }
   .clients {
