@@ -49,12 +49,8 @@ table {
 
 // fonts
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Poppins:700');
-@import url('https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco');
-
 $font-primary: 'Roboto', Helvetica, sans-serif;
-$font-secondary: 'Poppins', Helvetica, sans-serif;
+$font-secondary: 'Heebo', Helvetica, sans-serif;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
@@ -266,8 +262,6 @@ mark {
   color: $light-grey;
   margin-top: $gutter / 2;
   img {
-    width: 24px;
-    height: 24px;
     margin-right: $gutter / 4;
     border-radius: 100%;
   }
@@ -368,6 +362,23 @@ footer, footer a {
 }
 
 
-// imports
+// 404
 
-@import "404";
+.console {
+  margin: 0 $gutter;
+  line-height: 2;
+}
+
+.blinking-cursor {
+  color: $dark-grey;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: $dark-grey;
+  }
+}

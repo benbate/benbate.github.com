@@ -7,17 +7,15 @@
 <meta charset="utf-8">
   
 <meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, initial-scale=1.0, user-scalable=0">
+
 <title>Ben Bate - Product Designer</title>
 <meta name="description" content="I'm Ben, a Product Designer from the United Kingdom. I work with startups and top companies to design inclusive, effective, and impactful digital products.">
 
 <link rel="icon" type="img/png" href="img/icon.png"/>
 
-<link rel="stylesheet" href="css/main.css"/>
-<link rel="stylesheet" href="css/waves.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Heebo:900|Roboto:400,500,700" rel="stylesheet">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script src="js/jribbble.js"></script>
-<script src="js/waves.min.js"></script>
+<link rel="stylesheet" href="css/main.css"/>
 
 </head>
 
@@ -134,15 +132,39 @@
   <section class="row testimonials">
     <div class="column">
       <blockquote>"Ben's work is magic - he merges stunning user interface design with great user experience and designs products that give tangible results."</blockquote>
-      <div class="author"><img src="img/jan.png">Jan, Koncepted</div>
+      <div class="author">
+        <img srcset="
+          img/jan.png 1x,
+          img/jan@2x.png 2x,
+          img/jan@3x.png 3x"
+          height="24"
+          width="24"
+          alt="Photo of Jan"
+        />Jan, Koncepted</div>
     </div>
     <div class="column">
       <blockquote>"Ben is one of our go-to designers. He's helped us with aspects from full mobile app designs, to screenshots for app store A/B testing."</blockquote>
-      <div class="author"><img src="img/gabe.png">Gabe, Incipia</div>
+      <div class="author">
+      <img srcset="
+          img/gabe.png 1x,
+          img/gabe@2x.png 2x,
+          img/gabe@3x.png 3x"
+          height="24"
+          width="24"
+          alt="Photo of Gabe"
+        />Gabe, Incipia</div>
     </div>
     <div class="column">
       <blockquote>"Ben is a great designer and a reliable resource. He has consistently helped bring significant value to a lot of our products in a timely manner."</blockquote>
-      <div class="author"><img src="img/daren.png">Daren, Fishermen Labs</div>
+      <div class="author">
+      <img srcset="
+          img/daren.png 1x,
+          img/daren@2x.png 2x,
+          img/daren@3x.png 3x"
+          height="24"
+          width="24"
+          alt="Photo of Daren"
+        />Daren, Fishermen Labs</div>
     </div>
   </section>
 
@@ -160,13 +182,16 @@
 
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="js/jribbble.js"></script>
+
 <script>
 $.jribbble.setToken('a7f3b799cc74893b10a33a4f825a8773f4905de16a214c5a6c897b872d355727');
-$.jribbble.users('benbate').shots({per_page: 3}).then(function(shots) {
+$.jribbble.buckets(605567).shots({per_page: 3}).then(function(res) {
   var html = [];
-  shots.forEach(function(shot) {
+  res.forEach(function(shot) {
     html.push('<a href="' + shot.html_url + '" title="View latest work samples on Dribbble" target="_blank">');
-    html.push('<img src="' + shot.images.hidpi + '">');
+    html.push('<img srcset="' + shot.images.normal + ' 1x, ' + shot.images.hidpi + ' 2x" alt="Latest work samples on Dribbble"/>');
     html.push('</a>');
   });
   $('.thumbnails').html(html.join(''));
