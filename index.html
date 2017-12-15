@@ -5,30 +5,33 @@
 <head>
 
 <meta charset="utf-8">
-  
-<meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, initial-scale=1.0, user-scalable=0">
 
 <title>Ben Bate - Product Designer</title>
 <meta name="description" content="I'm Ben, a Product Designer from the United Kingdom. I work with startups and top companies to design inclusive, effective, and impactful digital products.">
 
 <link rel="icon" type="img/png" href="img/icon.png"/>
 
-<link href="https://fonts.googleapis.com/css?family=Heebo:900|Roboto:400,500,700" rel="stylesheet">
-
 <link rel="stylesheet" href="css/main.css"/>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 
 </head>
 
 <body>
 
+
+<!-- CHRISTMAS!!! -->
+
+<canvas id="snow" class="snow"></canvas>
+
+<!-- //////////// -->
+
+
 <header role="banner">
 
   <section class="row">
-    <img src="img/logo.svg" height="30.5" alt="Ben Bate Logo"/>
-    <div class="contact">
-      <a href="https://www.messenger.com/t/hibenbate" class="messenger" title="Message Ben Bate on Facebook" role="button"><img src="img/messenger.svg" height="15" alt="Facebook Messenger Logo"></a>
-      <a href="mailto:hi@benbate.com" class="email" title="Email Ben Bate (hi@benbate.com)" role="button">EMAIL</a>
-    </div>
+    <img src="img/logo.svg" height="29" alt="Ben Bate Logo"/>
+    <a href="https://www.messenger.com/t/hibenbate" class="messenger" title="Message Ben Bate on Facebook" role="button"><img src="img/messenger.svg" height="15" alt="Facebook Messenger Logo"></a>
   </section>
 
 </header>
@@ -37,18 +40,8 @@
 
   <section class="row intro">
     <div class="column">
-      <h1>Effective design.</h1>
-      <h2>I work with startups and top companies to design <mark>inclusive, effective, and impactful</mark> digital products.</h2>
+      <h1>I work with startups and top companies to design <mark>inclusive, effective, and impactful</mark> digital products.</h1>
     </div>
-    <figure>
-      <img srcset="
-        img/illustration.png 1x,
-        img/illustration@2x.png 2x"
-        height="320"
-        width="300"
-        alt="Illustration of Ben Bate"
-      />
-    </figure>
   </section>
 
   <section class="row">
@@ -78,12 +71,30 @@
   </section>
 
   <section class="row thumbnails">
-  </section>
-
-  <section class="row">
-    <div class="column">
-      <h3>Adding Value to Digital Products</h3>
-    </div>
+    <a href="https://dribbble.com/shots/3489077-Messages-iPhone-App" title="View latest work samples on Dribbble" target="_blank">
+      <img srcset="
+          img/1.png 1x,
+          img/1@2x.png 2x,
+          img/1@3x.png 3x"
+          alt="Latest work samples on Dribbble"
+        />
+    </a>
+    <a href="https://dribbble.com/shots/3796834-File-Manager-for-iOS" title="View latest work samples on Dribbble" target="_blank">
+      <img srcset="
+          img/2.png 1x,
+          img/2@2x.png 2x,
+          img/2@3x.png 3x"
+          alt="Latest work samples on Dribbble"
+        />
+    </a>
+    <a href="https://dribbble.com/shots/3846330-Google-Photos-for-Android" title="View latest work samples on Dribbble" target="_blank">
+      <img srcset="
+          img/3.png 1x,
+          img/3@2x.png 2x,
+          img/3@3x.png 3x"
+          alt="Latest work samples on Dribbble"
+        />
+    </a>
   </section>
 
   <section class="row">
@@ -102,12 +113,6 @@
 
   <section class="row">
     <div class="column">
-      <h3>Common Questions</h3>
-    </div>
-  </section>
-
-  <section class="row">
-    <div class="column">
       <p class="question">Q. Where can I see your work?</p>
       <p><a href="mailto:hi@benbate.com" title="Email Ben Bate (hi@benbate.com)">Email me</a> and I will prepare work samples relevant to your project, with accompanying details.</p>
     </div>
@@ -122,12 +127,6 @@
   </section>
 
   <hr>
-
-  <section class="row">
-    <div class="column">
-      <h3>Client Testimonials</h3>
-    </div>
-  </section>
 
   <section class="row testimonials">
     <div class="column">
@@ -183,19 +182,101 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script src="js/jribbble.js"></script>
 
 <script>
-$.jribbble.setToken('a7f3b799cc74893b10a33a4f825a8773f4905de16a214c5a6c897b872d355727');
-$.jribbble.buckets(605567).shots({per_page: 3}).then(function(res) {
-  var html = [];
-  res.forEach(function(shot) {
-    html.push('<a href="' + shot.html_url + '" title="View latest work samples on Dribbble" target="_blank">');
-    html.push('<img srcset="' + shot.images.normal + ' 1x, ' + shot.images.hidpi + ' 2x" alt="Latest work samples on Dribbble"/>');
-    html.push('</a>');
-  });
-  $('.thumbnails').html(html.join(''));
-});
+var canvas = document.getElementById('snow'),
+    ctx = canvas.getContext('2d'),
+    width = ctx.canvas.width = canvas.offsetWidth,
+    height = ctx.canvas.height = canvas.offsetHeight,
+    animFrame = window.requestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.msRequestAnimationFrame,
+    snowflakes = [];
+
+window.onresize = function() {
+  width = ctx.canvas.width = canvas.offsetWidth;
+  height = ctx.canvas.height = canvas.offsetHeight;
+
+  for (var i = 0; i < snowflakes.length; i++) {
+    snowflakes[i].resized();
+  }
+}
+
+function update() {
+  for (var i = 0; i < snowflakes.length; i++) {
+    snowflakes[i].update();
+  }
+}
+
+function Snow() {
+  this.x = random(0, width);
+  this.y = random(-height, 0);
+  this.radius = random(0.5, 3.0);
+  this.speed = random(1, 3);
+  this.wind = random(-0.5, 3.0);
+  this.isResized = false;
+  
+  this.updateData = function () {
+    this.x = random(0, width);
+    this.y = random(-height, 0);
+  }
+  
+  this.resized = function () {
+    this.isResized = true;
+  }
+}
+
+Snow.prototype.draw = function() {
+  ctx.beginPath();
+  ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+  ctx.fillStyle = '#E5E5E5';
+  ctx.fill();
+  ctx.closePath();
+}
+
+Snow.prototype.update = function() {
+  this.y += this.speed;
+  this.x += this.wind;
+
+  if (this.y > ctx.canvas.height) {
+    if (this.isResized) {
+      this.updateData();
+      this.isResized = false;
+    } else {
+      this.y = 0;
+      this.x = random(0, width); 
+    }
+  }
+}
+
+function createSnow(count) {
+  for (var i = 0; i < count; i++) {
+    snowflakes[i] = new Snow();
+  }
+}
+
+function draw() {
+  ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+  for (var i = 0; i < snowflakes.length; i++) {
+    snowflakes[i].draw();
+  }
+}
+
+function loop() {
+  draw();
+  update();
+  animFrame(loop);
+}
+
+function random(min, max) {
+  var rand = (min + Math.random() * (max - min)).toFixed(1);
+  rand = Math.round(rand);
+  return rand;
+}
+
+createSnow(150);
+loop();
 </script>
 
 </body>

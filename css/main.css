@@ -38,8 +38,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.snow {
+  height: 100%;
+  position: absolute;
+  width: 100%; }
+
 ::selection {
-  background: #fff6ea; }
+  background: #9b9b9b; }
 
 body {
   width: 100%;
@@ -47,30 +52,20 @@ body {
   left: 0;
   top: 0;
   font-family: "Roboto", Helvetica, sans-serif;
-  color: #4a4a4a;
+  color: #555555;
   line-height: 1.5; }
 
 h1 {
-  font-family: "Heebo", Helvetica, sans-serif;
-  color: #050505;
-  font-size: 2.5rem;
-  margin-bottom: 40px; }
-
-h2 {
+  width: 66.6%;
   color: #050505;
   font-size: 1.5rem;
   font-weight: 400; }
-
-h3 {
-  color: #050505;
-  font-size: 1.375rem;
-  font-weight: 500; }
 
 a {
   color: #050505;
   text-decoration: none;
   padding-bottom: 1px;
-  border-bottom: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f9f9f9;
   transition: all .2s ease-in-out !important;
   transform: translateZ(0); }
   a:hover {
@@ -99,22 +94,25 @@ header .row, .row .clients, .contact-bar {
 .intro {
   align-items: flex-end; }
 
+.intro {
+  height: 320px; }
+
 hr {
   width: 90px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid #f9f9f9;
   margin: 0 auto 0 0; }
 
 .contact-bar {
   padding: 7px 7px 7px 15px;
   border-radius: 4px;
-  background-color: #effdf6;
-  color: #00c369;
+  background-color: #f9f9f9;
+  color: #555555;
   font-size: 0.875rem; }
 
 a.messenger, a.email {
   color: white;
   border-radius: 4px;
-  letter-spacing: 0.075rem;
+  letter-spacing: 0.05rem;
   font-weight: 700;
   line-height: 1;
   text-decoration: none;
@@ -125,14 +123,13 @@ a.messenger, a.email {
 
 a.messenger {
   padding: 10px 10px 11px 10px;
-  margin-right: 10px;
   background-color: #0084ff; }
   a.messenger img {
     vertical-align: middle; }
 
 a.email {
   padding: 10px 10px 11px 12px;
-  background-color: #00ea7e; }
+  background-color: #050505; }
 
 .thumbnails a {
   border: none; }
@@ -148,15 +145,15 @@ a.email {
 
 .question {
   color: #050505;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 20px; }
 
 mark {
-  color: #4d371b;
-  background: #fff6ea; }
+  color: #555555;
+  background: #f9f9f9; }
   mark.unavailable {
     color: #ef4d4d;
-    background: #fff4f4; }
+    background: #FFF7F7; }
 
 .author {
   display: flex;
@@ -180,6 +177,9 @@ footer, footer a {
   header, main, footer {
     max-width: 85%; }
 
+  h1 {
+    width: 100%; }
+
   .row {
     margin: 40px 0; }
 
@@ -189,17 +189,15 @@ footer, footer a {
     .column:last-of-type {
       margin: 0 auto; }
 
-  .intro figure {
-    margin: auto; }
+  .intro {
+    height: auto; }
 
   hr {
     margin: auto; }
 
   .thumbnails a {
-    width: 100%;
+    width: 30%;
     margin-bottom: 20px; }
-    .thumbnails a:last-of-type {
-      margin-bottom: 0; }
     .thumbnails a img {
       width: 100%; }
 
@@ -225,11 +223,13 @@ footer, footer a {
     margin-right: auto;
     width: 400px; } }
 @media screen and (max-width: 500px) {
-  .intro figure {
-    display: none; }
-
   .clients {
-    width: 300px; } }
+    width: 300px; }
+
+  .thumbnails a {
+    width: 100%; }
+    .thumbnails a:last-of-type {
+      margin-bottom: 0; } }
 @media screen and (max-width: 375px) {
   .clients {
     width: 150px; } }
@@ -238,13 +238,13 @@ footer, footer a {
   line-height: 2; }
 
 .blinking-cursor {
-  color: #4a4a4a;
+  color: #555555;
   animation: 1s blink step-end infinite; }
 
 @keyframes "blink" {
   from, to {
     color: transparent; }
   50% {
-    color: #4a4a4a; } }
+    color: #555555; } }
 
 /*# sourceMappingURL=main.css.map */

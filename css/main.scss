@@ -47,10 +47,18 @@ table {
 }
 
 
+// CHRISTMAS!!!!!!!!!!!!!!!!!!!
+
+.snow {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+
 // fonts
 
 $font-primary: 'Roboto', Helvetica, sans-serif;
-$font-secondary: 'Heebo', Helvetica, sans-serif;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
@@ -59,18 +67,13 @@ $font-height: 1.5;
 
 // colors
 
-$very-light-grey: #f3f3f3;
+$very-light-grey: #f9f9f9;
 $light-grey: #9b9b9b;
-$dark-grey: #4a4a4a;
+$dark-grey: #555555;
 $black: #050505;
-$light-green: #effdf6;
-$green: #00ea7e;
-$dark-green: #00c369;
 $blue: #0084ff;
-$light-red: #fff4f4;
+$light-red: #FFF7F7;
 $red: #ef4d4d;
-$light-brown: #fff6ea;
-$dark-brown: #4d371b;
 
 $color: $dark-grey;
 $link-color: $black;
@@ -84,7 +87,7 @@ $button-padding: 10px 10px 11px 12px;
 $gutter: 40px;
 
 ::selection {
-  background: $light-brown;
+  background: $light-grey;
 }
 
 body {
@@ -101,22 +104,10 @@ body {
 // typography
 
 h1 {
-  font-family: $font-secondary;
-  color: $black;
-  font-size: 2.5rem;
-  margin-bottom: $gutter;
-}
-
-h2 {
+  width: 66.6%;
   color: $black;
   font-size: 1.5rem;
   font-weight: $font-weight-regular;
-}
-
-h3 {
-  color: $black;
-  font-size: 1.375rem;
-  font-weight: $font-weight-medium;
 }
 
 a {
@@ -181,6 +172,10 @@ header .row, .row .clients, .contact-bar {
 
 // main
 
+.intro {
+  height: 320px;
+}
+
 hr {
   width: 90px;
   border: 1px solid $very-light-grey;
@@ -190,15 +185,15 @@ hr {
 .contact-bar {
   padding: $padding;
   border-radius: $radius;
-  background-color: $light-green;
-  color: $dark-green;
+  background-color: $very-light-grey;
+  color: $dark-grey;
   font-size: 0.875rem;
 }
 
 a.messenger, a.email {
   color: white;
   border-radius: $radius;
-  letter-spacing: 0.075rem;
+  letter-spacing: 0.05rem;
   font-weight: $font-weight-bold;
   line-height: 1;
   text-decoration: none;
@@ -211,7 +206,6 @@ a.messenger, a.email {
 
 a.messenger {
   padding: 10px 10px 11px 10px;
-  margin-right: $gutter / 4;
   background-color: $blue;
   img {
     vertical-align: middle;
@@ -220,7 +214,7 @@ a.messenger {
 
 a.email {
   padding: $button-padding;
-  background-color: $green;
+  background-color: $black;
 }
 
 .thumbnails {
@@ -243,13 +237,13 @@ a.email {
 
 .question {
   color: $black;
-  font-weight: $font-weight-medium;
+  font-weight: $font-weight-regular;
   margin-bottom: $gutter / 2;
 }
 
 mark {
-  color: $dark-brown;
-  background: $light-brown;
+  color: $dark-grey;
+  background: $very-light-grey;
   &.unavailable {
     color: $red;
     background: $light-red;
@@ -290,6 +284,9 @@ footer, footer a {
   header, main, footer {
     max-width: 85%;
   }
+  h1 {
+    width: 100%;
+  }
   .row {
     margin: 40px 0;
   }
@@ -300,18 +297,15 @@ footer, footer a {
       margin: 0 auto;
     }
   }
-  .intro figure {
-    margin: auto;
+  .intro {
+    height: auto;
   }
   hr {
     margin: auto;
   }
   .thumbnails a {
-    width: 100%;
+    width: 30%;
     margin-bottom: $gutter / 2;
-    &:last-of-type {
-      margin-bottom: 0;
-    }
     img {
       width: 100%;
     }
@@ -347,11 +341,14 @@ footer, footer a {
 }
 
 @media screen and (max-width: 500px) {
-  .intro figure {
-    display: none;
-  }
   .clients {
     width: 300px;
+  }
+  .thumbnails a {
+    width: 100%;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 
