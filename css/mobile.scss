@@ -1,0 +1,87 @@
+@import 'reset';
+@import 'variables';
+
+
+// media
+
+@media screen and (max-width: 1000px) {
+  body {
+    margin: 0;
+  }
+  header, main, footer {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  h1 {
+    width: 100%;
+  }
+  .row {
+    margin: 40px 0;
+  }
+  .column {
+    text-align: center;
+    margin: 0 auto $gutter / 2 auto;
+    &:last-of-type {
+      margin: 0 auto;
+    }
+  }
+  .intro {
+    height: auto;
+  }
+  hr {
+    margin: auto;
+  }
+  .thumbnails a {
+    width: 30%;
+    margin-bottom: $gutter / 2;
+    img {
+      width: 100%;
+    }
+  }
+  .contact-bar {
+    padding: $gutter * 0.75;
+    text-align: center;
+    justify-content: space-around;
+    .message {
+      width: 100%;
+    }
+    a.email {
+      margin-top: $gutter / 2;
+    }
+  }
+  .clients {
+    justify-content: space-around;
+    img {
+      padding: $gutter / 4;
+    }
+  }
+  .author {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .clients {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .clients {
+    width: 300px;
+  }
+  .thumbnails a {
+    width: 100%;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .clients {
+    width: 150px;
+  }
+}

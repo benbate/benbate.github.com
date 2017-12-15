@@ -1,50 +1,5 @@
-// reset
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+@import 'reset';
+@import 'variables';
 
 
 // CHRISTMAS!!!!!!!!!!!!!!!!!!!
@@ -56,39 +11,7 @@ table {
 }
 
 
-// fonts
-
-$font-primary: 'Roboto', Helvetica, sans-serif;
-$font-weight-regular: 400;
-$font-weight-medium: 500;
-$font-weight-bold: 700;
-$font-height: 1.5;
-
-
-// colors
-
-$very-light-grey: #f9f9f9;
-$light-grey: #9b9b9b;
-$dark-grey: #555555;
-$black: #050505;
-$blue: #0084ff;
-$light-red: #FFF7F7;
-$red: #ef4d4d;
-
-$color: $dark-grey;
-$link-color: $black;
-
-
-// universal
-
-$radius: 4px;
-$padding: 7px 7px 7px 15px;
-$button-padding: 10px 10px 11px 12px;
-$gutter: 40px;
-
-::selection {
-  background: $light-grey;
-}
+// body
 
 body {
   width: 100%;
@@ -274,87 +197,6 @@ footer, footer a {
 @media screen and (min-width: 1000px) {
   .column {
     flex: 1;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  body {
-    margin: 0;
-  }
-  header, main, footer {
-    max-width: 85%;
-  }
-  h1 {
-    width: 100%;
-  }
-  .row {
-    margin: 40px 0;
-  }
-  .column {
-    text-align: center;
-    margin: 0 auto $gutter / 2 auto;
-    &:last-of-type {
-      margin: 0 auto;
-    }
-  }
-  .intro {
-    height: auto;
-  }
-  hr {
-    margin: auto;
-  }
-  .thumbnails a {
-    width: 30%;
-    margin-bottom: $gutter / 2;
-    img {
-      width: 100%;
-    }
-  }
-  .contact-bar {
-    padding: $gutter * 0.75;
-    text-align: center;
-    justify-content: space-around;
-    .message {
-      width: 100%;
-    }
-    a.email {
-      margin-top: $gutter / 2;
-    }
-  }
-  .clients {
-    justify-content: space-around;
-    img {
-      padding: $gutter / 4;
-    }
-  }
-  .author {
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .clients {
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .clients {
-    width: 300px;
-  }
-  .thumbnails a {
-    width: 100%;
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .clients {
-    width: 150px;
   }
 }
 

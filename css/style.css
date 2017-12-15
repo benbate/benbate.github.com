@@ -43,9 +43,6 @@ table {
   position: absolute;
   width: 100%; }
 
-::selection {
-  background: #9b9b9b; }
-
 body {
   width: 100%;
   margin: 80px 0;
@@ -170,69 +167,6 @@ footer, footer a {
 @media screen and (min-width: 1000px) {
   .column {
     flex: 1; } }
-@media screen and (max-width: 1000px) {
-  body {
-    margin: 0; }
-
-  header, main, footer {
-    max-width: 85%; }
-
-  h1 {
-    width: 100%; }
-
-  .row {
-    margin: 40px 0; }
-
-  .column {
-    text-align: center;
-    margin: 0 auto 20px auto; }
-    .column:last-of-type {
-      margin: 0 auto; }
-
-  .intro {
-    height: auto; }
-
-  hr {
-    margin: auto; }
-
-  .thumbnails a {
-    width: 30%;
-    margin-bottom: 20px; }
-    .thumbnails a img {
-      width: 100%; }
-
-  .contact-bar {
-    padding: 30px;
-    text-align: center;
-    justify-content: space-around; }
-    .contact-bar .message {
-      width: 100%; }
-    .contact-bar a.email {
-      margin-top: 20px; }
-
-  .clients {
-    justify-content: space-around; }
-    .clients img {
-      padding: 10px; }
-
-  .author {
-    justify-content: center; } }
-@media screen and (max-width: 850px) {
-  .clients {
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px; } }
-@media screen and (max-width: 500px) {
-  .clients {
-    width: 300px; }
-
-  .thumbnails a {
-    width: 100%; }
-    .thumbnails a:last-of-type {
-      margin-bottom: 0; } }
-@media screen and (max-width: 375px) {
-  .clients {
-    width: 150px; } }
 .console {
   margin: 0 40px;
   line-height: 2; }
@@ -247,4 +181,4 @@ footer, footer a {
   50% {
     color: #555555; } }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */
