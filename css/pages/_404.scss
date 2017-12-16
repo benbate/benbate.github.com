@@ -1,0 +1,23 @@
+@import '../base/reset';
+@import '../utils/variables';
+@import '../main';
+
+
+.console {
+  margin: 0 $gutter;
+  line-height: 2;
+}
+
+.blinking-cursor {
+  color: $dark-grey;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: $dark-grey;
+  }
+}

@@ -1,5 +1,5 @@
-@import 'reset';
-@import 'variables';
+@import 'base/reset';
+@import 'utils/variables';
 
 
 // CHRISTMAS!!!!!!!!!!!!!!!!!!!
@@ -197,27 +197,5 @@ footer, footer a {
 @media screen and (min-width: 1000px) {
   .column {
     flex: 1;
-  }
-}
-
-
-// 404
-
-.console {
-  margin: 0 $gutter;
-  line-height: 2;
-}
-
-.blinking-cursor {
-  color: $dark-grey;
-  animation: 1s blink step-end infinite;
-}
-
-@keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: $dark-grey;
   }
 }

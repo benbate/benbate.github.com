@@ -11,10 +11,8 @@
 
 <link href="img/icon.png" rel="icon" type="img/png">
 
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-
-<link href="css/style.css" rel="stylesheet" media="all">
-<link href="css/mobile.css" rel="stylesheet" media="(max-width: 1000px)">
+<link href="css/main.css" rel="stylesheet" media="(min-width: 1000px)">
+<link href="css/layout/_mobile.css" rel="stylesheet" media="(max-width: 1000px)">
 
 </head>
 
@@ -182,8 +180,20 @@
 
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>
+   WebFontConfig = {
+      google: { families: ['Roboto:400,500,700:latin'] }
+   };
 
+   (function(d) {
+      var wf = d.createElement('script'), s = d.scripts[0];
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+      wf.async = true;
+      s.parentNode.insertBefore(wf, s);
+   })(document);
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script>
 var canvas = document.getElementById('snow'),
     ctx = canvas.getContext('2d'),
