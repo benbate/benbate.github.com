@@ -48,7 +48,7 @@ body {
   margin: 80px 0;
   left: 0;
   top: 0;
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   color: #555555;
   line-height: 1.5; }
 
@@ -167,18 +167,69 @@ footer, footer a {
 @media screen and (min-width: 1000px) {
   .column {
     flex: 1; } }
-.console {
-  margin: 0 40px;
-  line-height: 2; }
+@media screen and (max-width: 1000px) {
+  body {
+    margin: 0; }
 
-.blinking-cursor {
-  color: #555555;
-  animation: 1s blink step-end infinite; }
+  header, main, footer {
+    max-width: 85%;
+    margin: 0 auto; }
 
-@keyframes "blink" {
-  from, to {
-    color: transparent; }
-  50% {
-    color: #555555; } }
+  h1 {
+    width: 100%; }
+
+  .row {
+    margin: 40px 0; }
+
+  .column {
+    text-align: center;
+    margin: 0 auto 20px auto; }
+    .column:last-of-type {
+      margin: 0 auto; }
+
+  .intro {
+    height: auto; }
+
+  hr {
+    margin: auto; }
+
+  .thumbnails a {
+    width: 30%;
+    margin-bottom: 20px; }
+    .thumbnails a img {
+      width: 100%; }
+
+  .contact-bar {
+    padding: 30px;
+    text-align: center;
+    justify-content: space-around; }
+    .contact-bar .message {
+      width: 100%; }
+    .contact-bar a.email {
+      margin-top: 20px; }
+
+  .clients {
+    justify-content: space-around; }
+    .clients img {
+      padding: 10px; }
+
+  .author {
+    justify-content: center; } }
+@media screen and (max-width: 850px) {
+  .clients {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px; } }
+@media screen and (max-width: 500px) {
+  .clients {
+    width: 300px; }
+
+  .thumbnails a {
+    width: 100%; }
+    .thumbnails a:last-of-type {
+      margin-bottom: 0; } }
+@media screen and (max-width: 375px) {
+  .clients {
+    width: 150px; } }
 
 /*# sourceMappingURL=main.css.map */
