@@ -41,7 +41,8 @@ table {
 .snow {
   height: 100%;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
 
 body {
   width: 100%;
