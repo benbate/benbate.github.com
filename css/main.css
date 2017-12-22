@@ -115,7 +115,8 @@ a.messenger, a.email {
   line-height: 1;
   text-decoration: none;
   border: none;
-  font-size: 0.75rem; }
+  font-size: 0.75rem;
+  z-index: 2; }
   a.messenger:hover, a.email:hover {
     opacity: 0.8; }
 
@@ -130,7 +131,8 @@ a.email {
   background-color: #050505; }
 
 .thumbnails a {
-  border: none; }
+  border: none;
+  z-index: 2; }
   .thumbnails a:hover {
     opacity: 0.8; }
   .thumbnails a img {

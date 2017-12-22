@@ -123,6 +123,7 @@ a.messenger, a.email {
   text-decoration: none;
   border: none;
   font-size: 0.75rem;
+  z-index: 2;
   &:hover {
     opacity: 0.8;
   }
@@ -144,6 +145,7 @@ a.email {
 .thumbnails {
   a {
     border: none;
+    z-index: 2;
     &:hover {
       opacity: 0.8;
     }
