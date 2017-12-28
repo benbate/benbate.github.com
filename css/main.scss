@@ -2,16 +2,6 @@
 @import 'utils/variables';
 
 
-// CHRISTMAS!!!!!!!!!!!!!!!!!!!
-
-.snow {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-}
-
-
 // body
 
 body {
@@ -109,20 +99,19 @@ hr {
 .contact-bar {
   padding: $padding;
   border-radius: $radius;
-  background-color: $very-light-grey;
-  color: $dark-grey;
+  background-color: $light-grey;
+  color: white;
   font-size: 0.875rem;
 }
 
 a.messenger, a.email {
-  color: white;
+  color: $light-grey;
   border-radius: $radius;
-  letter-spacing: 0.05rem;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-medium;
   line-height: 1;
   text-decoration: none;
   border: none;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   z-index: 2;
   &:hover {
     opacity: 0.8;
@@ -139,7 +128,7 @@ a.messenger {
 
 a.email {
   padding: $button-padding;
-  background-color: $black;
+  background-color: white;
 }
 
 .thumbnails {

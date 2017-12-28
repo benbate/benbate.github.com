@@ -3,7 +3,6 @@
 $font-primary: 'Roboto', Arial, Helvetica, sans-serif;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
-$font-weight-bold: 700;
 $font-height: 1.5;
 
 
@@ -12,7 +11,7 @@ $font-height: 1.5;
 $very-light-grey: #f9f9f9;
 $light-grey: #9b9b9b;
 $dark-grey: #555555;
-$black: #050505;
+$black: #000;
 $blue: #0084ff;
 $light-red: #FFF7F7;
 $red: #ef4d4d;
@@ -23,7 +22,7 @@ $link-color: $black;
 
 // universal
 
-$radius: 4px;
+$radius: 3px;
 $padding: 7px 7px 7px 15px;
-$button-padding: 10px 10px 11px 12px;
+$button-padding: 11px 13px;
 $gutter: 40px;

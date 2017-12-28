@@ -38,12 +38,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.snow {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: 1; }
-
 body {
   width: 100%;
   margin: 80px 0;
@@ -55,12 +49,12 @@ body {
 
 h1 {
   width: 66.6%;
-  color: #050505;
+  color: #000;
   font-size: 1.5rem;
   font-weight: 400; }
 
 a {
-  color: #050505;
+  color: #000;
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid #f9f9f9;
@@ -102,20 +96,19 @@ hr {
 
 .contact-bar {
   padding: 7px 7px 7px 15px;
-  border-radius: 4px;
-  background-color: #f9f9f9;
-  color: #555555;
+  border-radius: 3px;
+  background-color: #9b9b9b;
+  color: white;
   font-size: 0.875rem; }
 
 a.messenger, a.email {
-  color: white;
-  border-radius: 4px;
-  letter-spacing: 0.05rem;
-  font-weight: 700;
+  color: #9b9b9b;
+  border-radius: 3px;
+  font-weight: 500;
   line-height: 1;
   text-decoration: none;
   border: none;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   z-index: 2; }
   a.messenger:hover, a.email:hover {
     opacity: 0.8; }
@@ -127,8 +120,8 @@ a.messenger {
     vertical-align: middle; }
 
 a.email {
-  padding: 10px 10px 11px 12px;
-  background-color: #050505; }
+  padding: 11px 13px;
+  background-color: white; }
 
 .thumbnails a {
   border: none;
@@ -138,13 +131,13 @@ a.email {
   .thumbnails a img {
     width: 273.33333px;
     height: auto;
-    border-radius: 4px; }
+    border-radius: 3px; }
 
 .thumbnails, .testimonials {
   margin-bottom: 80px; }
 
 .question {
-  color: #050505;
+  color: #000;
   font-weight: 400;
   margin-bottom: 20px; }
 
