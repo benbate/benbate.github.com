@@ -27,12 +27,11 @@ h1 {
 a {
   color: $link-color;
   text-decoration: none;
-  padding-bottom: 1px;
-  border-bottom: 1px solid $very-light-grey;
+  border-bottom: 1px solid $light-grey;
   transition: all .2s ease-in-out !important;
   transform: translateZ(0);
   &:hover {
-    border-bottom: 1px solid $light-grey;
+    border-bottom: 1px solid $grey;
   }
 }
 
@@ -99,13 +98,13 @@ hr {
 .contact-bar {
   padding: $padding;
   border-radius: $radius;
-  background-color: $light-grey;
-  color: white;
+  background-color: $light-brown;
+  color: $brown;
   font-size: 0.875rem;
 }
 
 a.messenger, a.email {
-  color: $light-grey;
+  color: white;
   border-radius: $radius;
   font-weight: $font-weight-medium;
   line-height: 1;
@@ -119,8 +118,8 @@ a.messenger, a.email {
 }
 
 a.messenger {
-  padding: 10px 10px 11px 10px;
-  background-color: $blue;
+  padding: 10px;
+  background-color: $black;
   img {
     vertical-align: middle;
   }
@@ -128,7 +127,7 @@ a.messenger {
 
 a.email {
   padding: $button-padding;
-  background-color: white;
+  background-color: $brown;
 }
 
 .thumbnails {
@@ -159,16 +158,12 @@ a.email {
 mark {
   color: $dark-grey;
   background: $very-light-grey;
-  &.unavailable {
-    color: $red;
-    background: $light-red;
-  }
 }
 
 .author {
   display: flex;
   align-items: center;
-  color: $light-grey;
+  color: $grey;
   margin-top: $gutter / 2;
   img {
     margin-right: $gutter / 4;
@@ -180,7 +175,7 @@ mark {
 // footer
 
 footer, footer a {
-  color: $light-grey;
+  color: $grey;
 }
 
 
