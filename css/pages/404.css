@@ -81,8 +81,6 @@ table {
 body {
   width: 100%;
   margin: 80px 0;
-  left: 0;
-  top: 0;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   color: #555;
   line-height: 1.5; }
@@ -97,8 +95,7 @@ a {
   color: #555;
   text-decoration: none;
   border-bottom: 1px solid #ebebeb;
-  transition: all .2s ease-in-out !important;
-  transform: translateZ(0); }
+  transition: all .2s ease-in-out !important; }
   a:hover {
     border-bottom: 1px solid #9b9b9b; }
 
@@ -145,7 +142,6 @@ a.messenger, a.email {
   line-height: 1;
   text-decoration: none;
   border: none;
-  font-size: 0.8125rem;
   z-index: 2; }
   a.messenger:hover, a.email:hover {
     opacity: 0.8; }
@@ -157,7 +153,7 @@ a.messenger {
     vertical-align: middle; }
 
 a.email {
-  padding: 11px 13px;
+  padding: 11px 13px 12px;
   background-color: #ab865b; }
 
 .thumbnails a {

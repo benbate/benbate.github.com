@@ -7,8 +7,6 @@
 body {
   width: 100%;
   margin: $gutter * 2 0;
-  left: 0;
-  top: 0;
   font-family: $font-primary;
   color: $color;
   line-height: $font-height;
@@ -29,7 +27,6 @@ a {
   text-decoration: none;
   border-bottom: 1px solid $light-grey;
   transition: all .2s ease-in-out !important;
-  transform: translateZ(0);
   &:hover {
     border-bottom: 1px solid $grey;
   }
@@ -108,7 +105,6 @@ a.messenger, a.email {
   line-height: 1;
   text-decoration: none;
   border: none;
-  font-size: 0.8125rem;
   z-index: 2;
   &:hover {
     opacity: 0.8;
