@@ -1,0 +1,12 @@
+<svg width="140" height="68" viewBox="0 0 140 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>itf</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(1398 -184)">
+<g id="itf">
+<use xlink:href="#path0_fill" transform="translate(-1398 184)" fill="#9B9B9B"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 0L 20 0L 20 68L 0 68L 0 0ZM 24 0L 44 0L 44 20L 24 20L 24 0ZM 92 0L 72 0L 72 20L 92 20L 92 0ZM 120 0L 140 0L 140 20L 120 20L 120 0ZM 140 24L 120 24L 120 44L 140 44L 140 24ZM 48 0L 68 0L 68 68L 48 68L 48 0ZM 116 0L 96 0L 96 68L 116 68L 116 0Z"/>
+</defs>
+</svg>

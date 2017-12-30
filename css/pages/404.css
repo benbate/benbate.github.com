@@ -88,7 +88,7 @@ body {
   line-height: 1.5; }
 
 h1 {
-  width: 66.6%;
+  width: 613.33333px;
   color: #000;
   font-size: 1.5rem;
   font-weight: 400; }
@@ -103,7 +103,7 @@ a {
     border-bottom: 1px solid #9b9b9b; }
 
 header, main, footer {
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto; }
 
 .row {
@@ -135,14 +135,12 @@ hr {
 
 .contact-bar {
   padding: 7px 7px 7px 15px;
-  border-radius: 0px;
   background-color: #fcfaf7;
   color: #ab865b;
   font-size: 0.875rem; }
 
 a.messenger, a.email {
   color: white;
-  border-radius: 0px;
   font-weight: 500;
   line-height: 1;
   text-decoration: none;
@@ -168,9 +166,8 @@ a.email {
   .thumbnails a:hover {
     opacity: 0.8; }
   .thumbnails a img {
-    width: 273.33333px;
-    height: auto;
-    border-radius: 0px; }
+    width: 293.33333px;
+    height: auto; }
 
 .thumbnails, .testimonials {
   margin-bottom: 80px; }
@@ -196,10 +193,10 @@ mark {
 footer, footer a {
   color: #9b9b9b; }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1060px) {
   .column {
     flex: 1; } }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1060px) {
   body {
     margin: 0; }
 
@@ -264,7 +261,6 @@ footer, footer a {
   .clients {
     width: 150px; } }
 .console {
-  margin: 0 40px;
   line-height: 2; }
 
 .blinking-cursor {

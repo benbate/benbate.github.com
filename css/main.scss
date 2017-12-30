@@ -18,7 +18,7 @@ body {
 // typography
 
 h1 {
-  width: 66.6%;
+  width: ($width - $gutter)*2/3;
   color: $black;
   font-size: 1.5rem;
   font-weight: $font-weight-regular;
@@ -39,7 +39,7 @@ a {
 // grid
 
 header, main, footer {
-  max-width: 900px;
+  max-width: $width;
   margin: 0 auto;
 }
 
@@ -97,7 +97,6 @@ hr {
 
 .contact-bar {
   padding: $padding;
-  border-radius: $radius;
   background-color: $light-brown;
   color: $brown;
   font-size: 0.875rem;
@@ -105,7 +104,6 @@ hr {
 
 a.messenger, a.email {
   color: white;
-  border-radius: $radius;
   font-weight: $font-weight-medium;
   line-height: 1;
   text-decoration: none;
@@ -138,9 +136,8 @@ a.email {
       opacity: 0.8;
     }
     img {
-      width: (900px - $gutter * 2) / 3;
+      width: ($width - $gutter * 2) / 3;
       height: auto;
-      border-radius: $radius;
     }
   }
 }
@@ -181,13 +178,13 @@ footer, footer a {
 
 // media
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1060px) {
   .column {
     flex: 1;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1060px) {
   body {
     margin: 0;
   }
@@ -199,7 +196,7 @@ footer, footer a {
     width: 100%;
   }
   .row {
-    margin: 40px 0;
+    margin: $gutter 0;
   }
   .column {
     text-align: center;
