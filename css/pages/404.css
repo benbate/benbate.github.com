@@ -78,31 +78,25 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.snow {
-  height: 100%;
-  position: absolute;
-  width: 100%; }
-
 body {
   width: 100%;
   margin: 80px 0;
   left: 0;
   top: 0;
-  font-family: "Roboto", Helvetica, sans-serif;
-  color: #555555;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #555;
   line-height: 1.5; }
 
 h1 {
   width: 66.6%;
-  color: #050505;
+  color: #000;
   font-size: 1.5rem;
   font-weight: 400; }
 
 a {
-  color: #050505;
+  color: #555;
   text-decoration: none;
-  padding-bottom: 1px;
-  border-bottom: 1px solid #f9f9f9;
+  border-bottom: 1px solid #ebebeb;
   transition: all .2s ease-in-out !important;
   transform: translateZ(0); }
   a:hover {
@@ -136,61 +130,59 @@ header .row, .row .clients, .contact-bar {
 
 hr {
   width: 90px;
-  border: 1px solid #f9f9f9;
+  border: 1px solid #f8f8f8;
   margin: 0 auto 0 0; }
 
 .contact-bar {
   padding: 7px 7px 7px 15px;
-  border-radius: 4px;
-  background-color: #f9f9f9;
-  color: #555555;
+  border-radius: 0px;
+  background-color: #fcfaf7;
+  color: #ab865b;
   font-size: 0.875rem; }
 
 a.messenger, a.email {
   color: white;
-  border-radius: 4px;
-  letter-spacing: 0.05rem;
-  font-weight: 700;
+  border-radius: 0px;
+  font-weight: 500;
   line-height: 1;
   text-decoration: none;
   border: none;
-  font-size: 0.75rem; }
+  font-size: 0.8125rem;
+  z-index: 2; }
   a.messenger:hover, a.email:hover {
     opacity: 0.8; }
 
 a.messenger {
-  padding: 10px 10px 11px 10px;
-  background-color: #0084ff; }
+  padding: 10px;
+  background-color: #000; }
   a.messenger img {
     vertical-align: middle; }
 
 a.email {
-  padding: 10px 10px 11px 12px;
-  background-color: #050505; }
+  padding: 11px 13px;
+  background-color: #ab865b; }
 
 .thumbnails a {
-  border: none; }
+  border: none;
+  z-index: 2; }
   .thumbnails a:hover {
     opacity: 0.8; }
   .thumbnails a img {
     width: 273.33333px;
     height: auto;
-    border-radius: 4px; }
+    border-radius: 0px; }
 
 .thumbnails, .testimonials {
   margin-bottom: 80px; }
 
 .question {
-  color: #050505;
+  color: #000;
   font-weight: 400;
   margin-bottom: 20px; }
 
 mark {
-  color: #555555;
-  background: #f9f9f9; }
-  mark.unavailable {
-    color: #ef4d4d;
-    background: #FFF7F7; }
+  color: #555;
+  background: #f8f8f8; }
 
 .author {
   display: flex;
@@ -207,18 +199,82 @@ footer, footer a {
 @media screen and (min-width: 1000px) {
   .column {
     flex: 1; } }
+@media screen and (max-width: 1000px) {
+  body {
+    margin: 0; }
+
+  header, main, footer {
+    max-width: 85%;
+    margin: 0 auto; }
+
+  h1 {
+    width: 100%; }
+
+  .row {
+    margin: 40px 0; }
+
+  .column {
+    text-align: center;
+    margin: 0 auto 20px auto; }
+    .column:last-of-type {
+      margin: 0 auto; }
+
+  .intro {
+    height: auto; }
+
+  hr {
+    margin: auto; }
+
+  .thumbnails a {
+    width: 30%;
+    margin-bottom: 20px; }
+    .thumbnails a img {
+      width: 100%; }
+
+  .contact-bar {
+    padding: 30px;
+    text-align: center;
+    justify-content: space-around; }
+    .contact-bar .message {
+      width: 100%; }
+    .contact-bar a.email {
+      margin-top: 20px; }
+
+  .clients {
+    justify-content: space-around; }
+    .clients img {
+      padding: 10px; }
+
+  .author {
+    justify-content: center; } }
+@media screen and (max-width: 850px) {
+  .clients {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px; } }
+@media screen and (max-width: 500px) {
+  .clients {
+    width: 300px; }
+
+  .thumbnails a {
+    width: 100%; }
+    .thumbnails a:last-of-type {
+      margin-bottom: 0; } }
+@media screen and (max-width: 375px) {
+  .clients {
+    width: 150px; } }
 .console {
   margin: 0 40px;
   line-height: 2; }
 
 .blinking-cursor {
-  color: #555555;
+  color: #555;
   animation: 1s blink step-end infinite; }
 
 @keyframes "blink" {
   from, to {
     color: transparent; }
   50% {
-    color: #555555; } }
+    color: #555; } }
 
-/*# sourceMappingURL=_404.css.map */
+/*# sourceMappingURL=404.css.map */
