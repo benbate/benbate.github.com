@@ -189,7 +189,7 @@ mark {
 footer, footer a {
   color: #9b9b9b; }
 
-@media screen and (min-width: 1060px) {
+@media screen and (min-width: 850px) {
   .column {
     flex: 1; } }
 @media screen and (max-width: 1060px) {
@@ -197,30 +197,14 @@ footer, footer a {
     margin: 0; }
 
   header, main, footer {
-    max-width: 85%;
-    margin: 0 auto; }
+    max-width: 85%; }
 
   h1 {
+    font-size: 1.375rem;
     width: 100%; }
 
-  .row {
-    margin: 40px 0; }
-
-  .column {
-    text-align: center;
-    margin: 0 auto 20px auto; }
-    .column:last-of-type {
-      margin: 0 auto; }
-
-  .intro {
-    height: auto; }
-
-  hr {
-    margin: auto; }
-
   .thumbnails a {
-    width: 30%;
-    margin-bottom: 20px; }
+    width: 30%; }
     .thumbnails a img {
       width: 100%; }
 
@@ -231,31 +215,38 @@ footer, footer a {
     .contact-bar .message {
       width: 100%; }
     .contact-bar a.email {
-      margin-top: 20px; }
+      margin-top: 20px; } }
+@media screen and (max-width: 850px) {
+  .row {
+    margin: 20px 0; }
+
+  .column {
+    margin: 20px 0; }
 
   .clients {
+    width: 400px;
+    margin: 40px auto;
     justify-content: space-around; }
     .clients img {
-      padding: 10px; }
-
-  .author {
-    justify-content: center; } }
-@media screen and (max-width: 850px) {
-  .clients {
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px; } }
+      padding: 10px; } }
 @media screen and (max-width: 500px) {
+  .intro {
+    height: 250px; }
+
   .clients {
     width: 300px; }
 
   .thumbnails a {
-    width: 100%; }
-    .thumbnails a:last-of-type {
-      margin-bottom: 0; } }
+    width: 100%; } }
 @media screen and (max-width: 375px) {
+  .intro {
+    height: 200px; }
+
+  .column {
+    margin: 10px 0; }
+
   .clients {
-    width: 150px; } }
+    width: 100px; } }
 .console {
   line-height: 2; }
 

@@ -174,7 +174,7 @@ footer, footer a {
 
 // media
 
-@media screen and (min-width: 1060px) {
+@media screen and (min-width: 850px) {
   .column {
     flex: 1;
   }
@@ -186,30 +186,13 @@ footer, footer a {
   }
   header, main, footer {
     max-width: 85%;
-    margin: 0 auto;
   }
   h1 {
+    font-size: 1.375rem;
     width: 100%;
-  }
-  .row {
-    margin: $gutter 0;
-  }
-  .column {
-    text-align: center;
-    margin: 0 auto $gutter / 2 auto;
-    &:last-of-type {
-      margin: 0 auto;
-    }
-  }
-  .intro {
-    height: auto;
-  }
-  hr {
-    margin: auto;
   }
   .thumbnails a {
     width: 30%;
-    margin-bottom: $gutter / 2;
     img {
       width: 100%;
     }
@@ -225,39 +208,45 @@ footer, footer a {
       margin-top: $gutter / 2;
     }
   }
+}
+
+@media screen and (max-width: 850px) {
+  .row {
+    margin: $gutter / 2 0;
+  }
+  .column {
+    margin: $gutter / 2 0;
+  }
   .clients {
+    width: 400px;
+    margin: $gutter auto;
     justify-content: space-around;
     img {
       padding: $gutter / 4;
     }
   }
-  .author {
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .clients {
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-  }
 }
 
 @media screen and (max-width: 500px) {
+  .intro {
+    height: 250px;
+  }
   .clients {
     width: 300px;
   }
   .thumbnails a {
     width: 100%;
-    &:last-of-type {
-      margin-bottom: 0;
-    }
   }
 }
 
 @media screen and (max-width: 375px) {
+  .intro {
+    height: 200px;
+  }
+  .column {
+    margin: $gutter / 4 0;
+  }
   .clients {
-    width: 150px;
+    width: 100px;
   }
 }
