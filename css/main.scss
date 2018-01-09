@@ -9,6 +9,7 @@ body {
   margin: $gutter * 2 0;
   font-family: $font-primary;
   color: $color;
+  font-size: 1rem;
   line-height: $font-height;
 }
 
@@ -16,9 +17,14 @@ body {
 // typography
 
 h1 {
-  width: ($width - $gutter)*2/3;
+  width: $width * 2/3 - $gutter;
   color: $black;
   font-size: 1.5rem;
+  font-weight: $font-weight-regular;
+}
+
+h2 {
+  font-size: 1.25rem;
   font-weight: $font-weight-regular;
 }
 
@@ -38,6 +44,10 @@ a {
 header, main, footer {
   max-width: $width;
   margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
 }
 
 .row {
@@ -83,7 +93,7 @@ header .row, .row .clients, .contact-bar {
 // main
 
 .intro {
-  height: 320px;
+  height: 300px;
 }
 
 hr {
@@ -182,7 +192,7 @@ footer, footer a {
 
 @media screen and (max-width: 1060px) {
   body {
-    margin: 0;
+    margin: $gutter 0;
   }
   header, main, footer {
     max-width: 85%;

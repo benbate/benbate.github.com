@@ -83,12 +83,17 @@ body {
   margin: 80px 0;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   color: #555;
+  font-size: 1rem;
   line-height: 1.5; }
 
 h1 {
-  width: 613.33333px;
+  width: 600px;
   color: #000;
   font-size: 1.5rem;
+  font-weight: 400; }
+
+h2 {
+  font-size: 1.25rem;
   font-weight: 400; }
 
 a {
@@ -102,6 +107,9 @@ a {
 header, main, footer {
   max-width: 960px;
   margin: 0 auto; }
+
+img {
+  max-width: 100%; }
 
 .row {
   display: flex;
@@ -123,7 +131,7 @@ header .row, .row .clients, .contact-bar {
   align-items: flex-end; }
 
 .intro {
-  height: 320px; }
+  height: 300px; }
 
 hr {
   width: 90px;
@@ -194,7 +202,7 @@ footer, footer a {
     flex: 1; } }
 @media screen and (max-width: 1060px) {
   body {
-    margin: 0; }
+    margin: 40px 0; }
 
   header, main, footer {
     max-width: 85%; }
