@@ -139,6 +139,7 @@ hr {
   margin: 0 auto 0 0; }
 
 .contact-bar {
+  border-radius: 8px;
   padding: 7px 7px 7px 15px;
   background-color: #fcfaf7;
   color: #ab865b;
@@ -155,12 +156,14 @@ a.messenger, a.email {
     opacity: 0.8; }
 
 a.email-button {
+  border-radius: 4px;
   padding: 7px 11px;
   background-color: #000; }
   a.email-button img {
     vertical-align: middle; }
 
 a.email {
+  border-radius: 4px;
   padding: 11px 13px 12px;
   background-color: #ab865b; }
 
@@ -170,6 +173,7 @@ a.email {
   .thumbnails a:hover {
     opacity: 0.8; }
   .thumbnails a img {
+    border-radius: 8px;
     width: 293.33333px;
     height: auto; }
 
@@ -182,6 +186,7 @@ a.email {
   margin-bottom: 20px; }
 
 mark {
+  border-radius: 4px;
   color: #555;
   background: #f8f8f8; }
 

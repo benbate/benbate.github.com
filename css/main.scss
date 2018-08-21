@@ -103,6 +103,7 @@ hr {
 }
 
 .contact-bar {
+  border-radius: $radius-large;
   padding: $padding;
   background-color: $light-brown;
   color: $brown;
@@ -122,6 +123,7 @@ a.messenger, a.email {
 }
 
 a.email-button {
+  border-radius: $radius;
   padding: 7px 11px;
   background-color: $black;
   img {
@@ -130,6 +132,7 @@ a.email-button {
 }
 
 a.email {
+  border-radius: $radius;
   padding: $button-padding;
   background-color: $brown;
 }
@@ -142,6 +145,7 @@ a.email {
       opacity: 0.8;
     }
     img {
+      border-radius: $radius-large;
       width: ($width - $gutter * 2) / 3;
       height: auto;
     }
@@ -159,6 +163,7 @@ a.email {
 }
 
 mark {
+  border-radius: $radius;
   color: $dark-grey;
   background: $very-light-grey;
 }
