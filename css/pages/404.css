@@ -154,10 +154,10 @@ a.messenger, a.email {
   a.messenger:hover, a.email:hover {
     opacity: 0.8; }
 
-a.messenger {
-  padding: 10px;
+a.email-button {
+  padding: 7px 11px;
   background-color: #000; }
-  a.messenger img {
+  a.email-button img {
     vertical-align: middle; }
 
 a.email {
