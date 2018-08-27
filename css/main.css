@@ -105,19 +105,19 @@ hr {
   color: #ab865b;
   font-size: 0.875rem; }
 
-a.messenger, a.email {
+a.email-button, a.email {
   color: white;
   font-weight: 500;
   line-height: 1;
   text-decoration: none;
   border: none;
   z-index: 2; }
-  a.messenger:hover, a.email:hover {
+  a.email-button:hover, a.email:hover {
     opacity: 0.8; }
 
 a.email-button {
   border-radius: 4px;
-  padding: 7px 11px;
+  padding: 11px;
   background-color: #000; }
   a.email-button img {
     vertical-align: middle; }

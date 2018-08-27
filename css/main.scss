@@ -110,7 +110,7 @@ hr {
   font-size: 0.875rem;
 }
 
-a.messenger, a.email {
+a.email-button, a.email {
   color: white;
   font-weight: $font-weight-medium;
   line-height: 1;
@@ -124,7 +124,7 @@ a.messenger, a.email {
 
 a.email-button {
   border-radius: $radius;
-  padding: 7px 11px;
+  padding: 11px;
   background-color: $black;
   img {
     vertical-align: middle;
