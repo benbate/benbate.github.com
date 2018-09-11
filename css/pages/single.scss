@@ -1,0 +1,31 @@
+@import '../base/reset';
+@import '../utils/variables';
+@import '../main';
+
+body {
+  margin-top: 0px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: $gutter * 2;
+}
+
+.intro {
+  height: 600px;
+  background: url("http://michaelevensen.com/media/images/front@2x.jpg") center center no-repeat;
+  background-size: cover;
+  margin: 0 0 $gutter * 2 0;
+}
+
+@media screen and (max-width: 850px) {
+  header {
+    padding-top: $gutter;
+  }
+  .intro {
+    height: 250px;
+    margin: 0 0 $gutter 0;
+  }
+}
